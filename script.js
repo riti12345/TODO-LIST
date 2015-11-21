@@ -20,6 +20,9 @@ $(document).ready(function()
      var detail=$('#detail').val();
 
  	$('#footer').append($('#title-date-detail').append("<li>" + "<b>" + title + "</br>" + date + "</b>"+ "</br>" +detail + "</li>" ));
+ 	  $('#title').val('');
+     $('#date').val('');
+     $('#detail').val('');
  	event.preventDefault();
 
  }),
@@ -32,7 +35,8 @@ $(document).ready(function()
 
 
 
- });
+ }),
+   $('#date').datepicker();
  return;
 });
 
